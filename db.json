@@ -1,46 +1,95 @@
 {
-  "plants": [
+  "games": [
     {
-      "id": 1,
-      "name": "Aloe",
-      "image": "./images/aloe.jpg",
-      "price": 15.99
+      "gamename": "snakegame",
+      "gamereview": "15",
+      "gamelike": true,
+      "gametype": "",
+      "id": 2
     },
     {
-      "id": 2,
-      "name": "ZZ Plant",
-      "image": "./images/zz-plant.jpg",
-      "price": 25.98
+      "gamename": "breakout",
+      "gamereview": "15",
+      "gamelike": true,
+      "gametype": "",
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "Pilea peperomioides",
-      "image": "./images/pilea.jpg",
-      "price": 5.99
+      "gamename": "snakegame",
+      "gamereview": "Awesome",
+      "gamelike": false,
+      "gametype": "",
+      "id": 3
     },
     {
-      "id": 4,
-      "name": "Pothos",
-      "image": "./images/pothos.jpg",
-      "price": 12.11
+      "gamename": "snakegame",
+      "gamereview": "Awesome",
+      "gamelike": true,
+      "gametype": "",
+      "id": 4
     },
     {
-      "id": 5,
-      "name": "Jade",
-      "image": "./images/jade.jpg",
-      "price": 10.37
+      "gamename": "snakegame",
+      "gamereview": "Hello",
+      "gamelike": false,
+      "gametype": "",
+      "id": 5
     },
     {
-      "id": 6,
-      "name": "Monstera Deliciosa",
-      "image": "./images/monstera.jpg",
-      "price": 25.99
+      "gamename": "snakegame",
+      "gamereview": "Fantastic",
+      "gamelike": true,
+      "gametype": "",
+      "id": 6
     },
     {
-      "id": 7,
-      "name": "Fiddle Leaf Fig",
-      "image": "./images/fiddle-leaf-fig.jpg",
-      "price": 55
+      "gamename": "snakegame",
+      "gamereview": "Amazing",
+      "gamelike": true,
+      "gametype": "",
+      "id": 7
+    },
+    {
+      "gamename": "snakegame",
+      "gamereview": "testing",
+      "gamelike": true,
+      "gametype": "",
+      "id": 8
+    },
+    {
+      "gamename": "breakout",
+      "gamereview": "Awesome",
+      "gamelike": true,
+      "gametype": "",
+      "id": 9
+    },
+    {
+      "gamename": "breakout",
+      "gamereview": "Fantastic",
+      "gamelike": true,
+      "gametype": "",
+      "id": 10
+    },
+    {
+      "gamename": "breakout",
+      "gamereview": "Boring",
+      "gamelike": true,
+      "gametype": "",
+      "id": 11
+    },
+    {
+      "gamename": "breakout",
+      "gamereview": "Terrible",
+      "gamelike": true,
+      "gametype": "",
+      "id": 12
+    },
+    {
+      "gamename": "breakout",
+      "gamereview": "Breakout is awesome",
+      "gamelike": true,
+      "gametype": "",
+      "id": 13
     }
   ]
 }
