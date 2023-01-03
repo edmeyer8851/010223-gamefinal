@@ -10,7 +10,7 @@ import Login from "./Login"
 import 'semantic-ui-css/semantic.min.css'
 // import PlantPage from "./PlantPage";
 
-//Jan 2 version 
+//Jan 3 version 
 
 function App() {
 
