@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import Review from "./Review"
 import Enterscores from "./Enterscores"
 import { Button, Form, Grid, Header, Image, Message, Segment, Icon, Container } from 'semantic-ui-react'
+import Snake from "./games/snake/Snake"
 
 
 function Snakegame ({games, addNewGame, supscores, addNewScores }) { 
@@ -23,6 +24,7 @@ function Snakegame ({games, addNewGame, supscores, addNewScores }) {
            <br />  Snake Game 
         </Header>
         <Container> 
+        <Snake />
         <Header as='h3'>
             <Icon name='thumbs up outline' />
             <Header.Content> {sgamelike} likes Snake Game <br /> </Header.Content>
