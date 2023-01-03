@@ -20,16 +20,16 @@ function Snakegame ({games, addNewGame, supscores, addNewScores }) {
         <div>
         
         <Grid textAlign = 'center' style ={{height: '100vh'}} verticalAlign = 'middle'>
-        <Header as='h2' color = 'teal' textAlign = 'center'>
+        <Header as='h2' color = 'green' textAlign = 'center'>
            <br />  Snake Game 
         </Header>
         <Container> 
         <Snake />
         <Header as='h3'>
             <Icon name='thumbs up outline' />
-            <Header.Content> {sgamelike} likes Snake Game <br /> </Header.Content>
+            <Header.Content> {sgamelike} users like Snake! <br /> </Header.Content>
         </Header> <br />
-        <Enterscores /> <br />
+        {/* <Enterscores /> <br /> */}
         
         <Review games = {games} addNewGame = {addNewGame} />
         </Container>

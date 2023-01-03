@@ -2,20 +2,6 @@
   "games": [
     {
       "gamename": "snakegame",
-      "gamereview": "15",
-      "gamelike": true,
-      "gametype": "",
-      "id": 2
-    },
-    {
-      "gamename": "breakout",
-      "gamereview": "15",
-      "gamelike": true,
-      "gametype": "",
-      "id": 2
-    },
-    {
-      "gamename": "snakegame",
       "gamereview": "Awesome",
       "gamelike": false,
       "gametype": "",
@@ -97,6 +83,18 @@
       "gamelike": true,
       "gametype": "",
       "id": 14
+    }
+  ],
+  "snakeHiscores": [
+    {
+      "user": "Josh",
+      "score": 500
+    }
+  ],
+  "breakoutHiscores": [
+    {
+      "user": "Zezima",
+      "score": 9001
     }
   ]
 }

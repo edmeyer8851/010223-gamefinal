@@ -25,30 +25,15 @@ function NavBar() {
 
 
     return (
-      //   <div>
-      //   <Navbar style = {isDarkMode ? {background: "black"} : {background : "yellow"}}>
-      //   <Container > 
-      //     {/* <Navbar.Brand href = "/" style = {isDarkMode ? {color: "yellow"} : {color : "black"}}> Home</Navbar.Brand> */}
-      //     <Nav className = "center-navbar">
-      //       <Nav.Link href = "/" style = {isDarkMode ? {color: "yellow"} : {color : "black"}}>Home</Nav.Link>
-      //       <Nav.Link href = "/snakegame" style = {isDarkMode ? {color: "yellow"} : {color : "black"}}>Snake Game</Nav.Link>
-      //       <Nav.Link href = "/breakout" style = {isDarkMode ? {color: "yellow"} : {color : "black"}}>Break Out </Nav.Link>
-      //       <Nav.Link href = "/hiscores" style = {isDarkMode ? {color: "yellow"} : {color : "black"}}>High-Score </Nav.Link>  
-      //       <Nav.Link href = "/login" style = {isDarkMode ? {color: "yellow"} : {color : "black"}}>Login </Nav.Link>
-      //     </Nav>
-      //   <button onClick = {onToggleDarkMode}>{textButton} </button>
-      //   </Container>
-      // </Navbar>
-      //   </div>
       <div className = "App">
-                <Grid padded className = "tablet computer only">
-            <Menu borderless fluid inverted size = "huge" centered style = {isDarkMode ? {background: "black"} : {background: "yellow"}}> 
+        <Grid padded className = "tablet computer only">
+            <Menu borderless fluid inverted size = "huge" centered="true" style = {isDarkMode ? {background: "black"} : {background: "yellow"}}> 
                 <Container> 
                     <Menu.Item header as = "a" href = "/" style = {isDarkMode ? {color:"yellow"} : {color : "black"}}>
                         Home 
                     </Menu.Item>
                     <Menu.Item header as = "a" href = "/snakegame" style = {isDarkMode ? {color:"yellow"} : {color : "black"}}>
-                        Snake Game
+                        Snake
                     </Menu.Item>
                     <Menu.Item header as = "a" href = "/breakout" style = {isDarkMode ? {color:"yellow"} : {color : "black"}}>
                         Breakout
@@ -64,7 +49,6 @@ function NavBar() {
                         <button onClick = {onToggleDarkMode} style= {{backgroundcolor:"magenta"}}> {textButton}</button>
                         </Menu.Item>
                     </Menu.Menu>
-
                 </Container>
             </Menu>
         </Grid>

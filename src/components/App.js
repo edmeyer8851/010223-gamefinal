@@ -35,7 +35,7 @@ function App() {
   return (
    <BrowserRouter>
     <div>
-      <h3> Retro Games </h3>
+      <h3 id="site-title"> Retro Games </h3>
       <NavBar /> 
     </div>
     <div> 
