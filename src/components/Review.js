@@ -1,35 +1,40 @@
-import React, {useEffect, useState} from "react";
-import { Form, Button, InputGroup , Container, Row, Col } from "react-bootstrap";
+import React, {useState} from "react";
+import { Form, Button, InputGroup , Container } from "react-bootstrap";
 import './Styles.css';
 
 
 
-function Review ({games, addNewGame}) { 
+function Review ({ addNewReview }) { 
 
     const [gameName, setGameName] = useState("");
     const [gameReview, setGameReview] = useState("");
-    const [gameLike, setGameLike] = useState(false)
-    const [gameType, setGameType] = useState("")
+    const [gameLiked, setGameLiked] = useState(false)
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const newGames = {
-            gamename : gameName,
-            gamereview : gameReview, 
-            gamelike : gameLike,
-            gametype : gameType,
+        const newReview = {
+            game: gameName,
+            review: gameReview, 
+            liked: gameLiked
         }
 
-        fetch ("http://localhost:6001/games", {
+        fetch ("http://localhost:6001/reviews", {
             method : "POST",
             headers : {
                 "Content-Type" : "application/JSON",
             },
-            body: JSON.stringify (newGames)
+            body: JSON.stringify (newReview)
         })
             .then (resp => resp.json())
-            .then (myGame => addNewGame(myGame))
+            .then (newReview => {
+                addNewReview(newReview)
+                setGameName("")
+                setGameReview("")
+                if (gameLiked){
+                    setGameLiked(false)
+                }
+            })
     }
 
     return (
@@ -45,10 +50,9 @@ function Review ({games, addNewGame}) {
                  type="switch"
                  id="custom-switch"
                  label="Check if you like the game"
-                 value = {gameLike}
-                 onChange = {(e) => setGameLike(e.target.checked)}
+                 value = {gameLiked}
+                 onChange = {(e) => setGameLiked(e.target.checked)}
                 /><br />
-                {/* <Form.Control aria-label = "Checkbox" /> */}
             </InputGroup>
             <Form.Group>
                 <Form.Label> Select Game </Form.Label>
@@ -58,7 +62,7 @@ function Review ({games, addNewGame}) {
                 onChange={(e) => setGameName(e.target.value)}
                 >
                 <option value = ""> Select Game </option>
-                <option value ="snakegame"> Snakegame</option>
+                <option value ="snake"> Snake</option>
                 <option value ="breakout"> Breakout</option>
                 </Form.Control> <br />
             </Form.Group>

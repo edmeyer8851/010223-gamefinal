@@ -1,8 +1,5 @@
-import data from './data'
-
-export default function AllBroken(bricks, player, ballObj){
+export default function AllBroken(bricks){
     let total = 0
-    let { brickObj } = data
     for (let i = 0; i < bricks.length; i++) {
         if (bricks[i].broke === true){
             total++

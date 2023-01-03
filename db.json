@@ -1,100 +1,200 @@
 {
-  "games": [
+  "currentUser": [
     {
-      "gamename": "snakegame",
-      "gamereview": "Awesome",
-      "gamelike": false,
-      "gametype": "",
+      "name": "",
+      "id": 1
+    }
+  ],
+  "reviews": [
+    {
+      "game": "snake",
+      "review": "I loved Snake!",
+      "liked": true,
+      "id": 1
+    },
+    {
+      "game": "snake",
+      "review": "Very nostalgic",
+      "liked": true,
+      "id": 2
+    },
+    {
+      "game": "snake",
+      "review": "I'm number 3 on the leaderboard!",
+      "liked": true,
       "id": 3
     },
     {
-      "gamename": "snakegame",
-      "gamereview": "Awesome",
-      "gamelike": true,
-      "gametype": "",
+      "game": "snake",
+      "review": "Awesome game",
+      "liked": false,
       "id": 4
     },
     {
-      "gamename": "snakegame",
-      "gamereview": "Hello",
-      "gamelike": false,
-      "gametype": "",
+      "game": "snake",
+      "review": "This game is boring",
+      "liked": true,
       "id": 5
     },
     {
-      "gamename": "snakegame",
-      "gamereview": "Fantastic",
-      "gamelike": true,
-      "gametype": "",
+      "game": "snake",
+      "review": "Only kids would like this game",
+      "liked": false,
       "id": 6
     },
     {
-      "gamename": "snakegame",
-      "gamereview": "Amazing",
-      "gamelike": true,
-      "gametype": "",
+      "game": "breakout",
+      "review": "Yoooo breakout!!",
+      "liked": true,
       "id": 7
     },
     {
-      "gamename": "snakegame",
-      "gamereview": "testing",
-      "gamelike": true,
-      "gametype": "",
+      "game": "breakout",
+      "review": "Another classic!",
+      "liked": true,
       "id": 8
     },
     {
-      "gamename": "breakout",
-      "gamereview": "Awesome",
-      "gamelike": true,
-      "gametype": "",
+      "game": "breakout",
+      "review": "Dude this game is buggy as hell",
+      "liked": false,
       "id": 9
     },
     {
-      "gamename": "breakout",
-      "gamereview": "Fantastic",
-      "gamelike": true,
-      "gametype": "",
+      "game": "breakout",
+      "review": "Has anyone gotten stuck on the edge before????////",
+      "liked": false,
       "id": 10
     },
     {
-      "gamename": "breakout",
-      "gamereview": "Boring",
-      "gamelike": true,
-      "gametype": "",
+      "game": "breakout",
+      "review": "Whoever made this game don't listen to the haters!",
+      "liked": true,
       "id": 11
-    },
-    {
-      "gamename": "breakout",
-      "gamereview": "Terrible",
-      "gamelike": true,
-      "gametype": "",
-      "id": 12
-    },
-    {
-      "gamename": "breakout",
-      "gamereview": "Breakout is awesome",
-      "gamelike": true,
-      "gametype": "",
-      "id": 13
-    },
-    {
-      "gamename": "snakegame",
-      "gamereview": "Snakegame review",
-      "gamelike": true,
-      "gametype": "",
-      "id": 14
     }
   ],
   "snakeHiscores": [
     {
       "user": "Josh",
-      "score": 500
+      "userScore": 500,
+      "id": 1
+    },
+    {
+      "user": "Eddie",
+      "userScore": 10,
+      "id": 2
+    },
+    {
+      "user": "Eddie",
+      "userScore": 40,
+      "id": 3
+    },
+    {
+      "user": "Eddie",
+      "userScore": 20,
+      "id": 4
+    },
+    {
+      "user": "Eddie",
+      "userScore": 40,
+      "id": 5
+    },
+    {
+      "user": "Eddie",
+      "userScore": 40,
+      "id": 6
+    },
+    {
+      "user": "Eddie",
+      "userScore": 10,
+      "id": 7
+    },
+    {
+      "user": "Eddie",
+      "userScore": 10,
+      "id": 8
+    },
+    {
+      "user": "Eddie",
+      "userScore": 300,
+      "id": 9
+    },
+    {
+      "user": "Eddie",
+      "userScore": 80,
+      "id": 10
     }
   ],
   "breakoutHiscores": [
     {
       "user": "Zezima",
-      "score": 9001
+      "userScore": 9001,
+      "id": 1
+    },
+    {
+      "user": "Josh",
+      "userScore": 30,
+      "id": 3
+    },
+    {
+      "user": "Josh",
+      "userScore": 150,
+      "id": 4
+    },
+    {
+      "user": "Josh",
+      "userScore": 260,
+      "id": 5
+    },
+    {
+      "user": "Josh",
+      "userScore": 70,
+      "id": 6
+    },
+    {
+      "user": "Josh",
+      "userScore": 30,
+      "id": 7
+    },
+    {
+      "user": "Josh",
+      "userScore": 0,
+      "id": 8
+    },
+    {
+      "user": "Josh",
+      "userScore": 0,
+      "id": 9
+    },
+    {
+      "user": "Josh",
+      "userScore": 10,
+      "id": 10
+    },
+    {
+      "user": "Josh",
+      "userScore": 150,
+      "id": 11
+    },
+    {
+      "user": "Josh",
+      "userScore": 20,
+      "id": 12
+    },
+    {
+      "user": "Josh",
+      "userScore": 40,
+      "id": 13
+    },
+    {
+      "user": "Mark",
+      "userScore": 410,
+      "id": 14
+    },
+    {
+      "user": "Eddie",
+      "userScore": 730,
+      "id": 15
     }
   ]
 }
