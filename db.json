@@ -90,6 +90,13 @@
       "gamelike": true,
       "gametype": "",
       "id": 13
+    },
+    {
+      "gamename": "snakegame",
+      "gamereview": "Snakegame review",
+      "gamelike": true,
+      "gametype": "",
+      "id": 14
     }
   ]
 }
