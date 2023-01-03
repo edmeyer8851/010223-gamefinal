@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import { Route, Switch, BrowserRouter } from "react-router-dom";// import Header from "./Header";
 import NavBar from "./NavBar"
 import Snakegame from "./Snakegame"
-import Breakout from "./Breakout"
+import Breakoutgame from "./Breakout"
 import Home from "./Home"
 import Hiscores from "./Hiscores"
 import './Styles.css'
@@ -44,7 +44,7 @@ function App() {
           <Snakegame games = {games} addNewGame = {addNewGame} supscores = {supscores} addNewScores = {addNewScores} />
         </Route>
         <Route path = "/breakout">
-          <Breakout />
+          <Breakoutgame games = {games} addNewGame = {addNewGame} supscores = {supscores} addNewScores = {addNewScores}/>
         </Route>
         <Route path = "/hiscores">
           <Hiscores />
