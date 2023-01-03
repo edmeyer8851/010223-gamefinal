@@ -71,6 +71,7 @@ body {
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
+  margin-top: 15px;
   cursor: pointer;
 }
 
@@ -132,4 +133,9 @@ div.two.column.row {
 
 #breakoutPreviewImg:hover {
   cursor: pointer;
+}
+
+#gameOver,
+#finalScore {
+  margin-top: 15px
 }

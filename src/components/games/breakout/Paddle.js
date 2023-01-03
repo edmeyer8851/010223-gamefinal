@@ -1,4 +1,4 @@
-export default (ctx, canvas, paddleProps) => {
+export default function PaddleStuff(ctx, canvas, paddleProps) {
     class Paddle {
         constructor(x) {
             this.x = x

@@ -1,32 +1,28 @@
-import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
+import { Form, Button, Container } from "react-bootstrap";
+import React from 'react';
 
-const Login = () => (
-  <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
-    <Grid.Column style={{ maxWidth: 450 }}>
-      <Header as='h2' color='teal' textAlign='center'>
-        <Image src='/logo.png' /> Log-in to your account
-      </Header>
-      <Form size='large'>
-        <Segment stacked>
-          <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address' />
-          <Form.Input
-            fluid
-            icon='lock'
-            iconPosition='left'
-            placeholder='Password'
-            type='password'
-          />
-
-          <Button color='teal' fluid size='large'>
-            Login
-          </Button>
-        </Segment>
-      </Form>
-      <Message>
-        New to us? <a href='#'>Sign Up</a>
-      </Message>
-    </Grid.Column>
-  </Grid>
-)
-
+function Login({ userForm, setUserForm, handleLogin}) {
+  
+  return (
+    <div>
+      <br></br>
+      <br></br>
+      <Container>
+        <Form onSubmit={handleLogin} >
+          <Form.Group>
+              <Form.Label>Enter your name:</Form.Label>
+              <Form.Control className="w-25"
+                type = "text"
+                placeholder = "name"
+                value={userForm}
+                onChange = {(e) => setUserForm(e.target.value)}
+              /> 
+              <br />
+          </Form.Group>
+          <Button variant = "primary" type = "submit">Submit</Button>
+        </Form>
+      </Container>
+    </div>
+  )
+}
 export default Login;

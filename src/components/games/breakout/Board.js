@@ -13,7 +13,7 @@ let { ballObj, paddleProps, player, brickObj } = data;
 let bricks = []
 let gameStartedBool = false
 
-const Board = () => {
+const Board = ({ currentUser }) => {
 
     const [gameStarted, setGameStarted] = useState(false)
     const [gameOver, setGameOver] = useState(false)
@@ -57,6 +57,19 @@ const Board = () => {
                 return brick.draw(ctx);
             })
 
+            const submitScore = (currentUser) => {
+                fetch('http://localhost:6001/breakOutHiscores', {
+                  method: 'POST',
+                  headers: {"Content-Type": 'application/json',
+                            "Accept": "application/json"
+                          }, 
+                  body: JSON.stringify({
+                    user: currentUser,
+                    userScore: player.score
+                  })
+                })
+              }
+
             if (player.lives === 0 && gameStarted){
                 ballObj.x = 385
                 ballObj.y = 200
@@ -64,6 +77,7 @@ const Board = () => {
                 setGameOver(true)
                 gameStartedBool = !gameStartedBool
                 setGameStarted(!gameStarted)
+                submitScore(currentUser)
             }
 
             BallMovement(ctx, ballObj)
@@ -103,7 +117,7 @@ const Board = () => {
 
             PaddleHit(ballObj, paddleProps)
 
-            PlayerStats(ctx, player, canvas)
+            PlayerStats(ctx, player, currentUser, canvas)
         
             if(gameStartedBool) {
                 requestAnimationFrame(render)
@@ -112,7 +126,7 @@ const Board = () => {
 
         render()
     
-    }, [gameStarted])
+    }, [gameStarted, currentUser])
 
     return (
     <div className="columnDiv">
@@ -131,8 +145,8 @@ const Board = () => {
         />
         <div className="gameUtilities">
             <div className="buttonsDiv">
-                {gameOver && <h2 style={{height: "15px"}}>GAME OVER!</h2>}
-                <h3 style={{height: "15px"}}>{gameOver ? `Final Score: ${score}` : ``}</h3>
+                {gameOver && <h2 id="gameOver" style={{height: "15px"}}>GAME OVER!</h2>}
+                <h3 id="finalScore" style={{height: "15px"}}>{gameOver ? `Final Score: ${score}` : ``}</h3>
                 <div >
                     <button className="gameButton" onClick={startGame}>Start Game</button>
                 </div>

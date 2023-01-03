@@ -14,7 +14,7 @@ import PlayerStats from "./PlayerStats"
 let {player} = data
 
 
-const Snake = () => {
+const Snake = ({ currentUser }) => {
 
   const playerStatsRef = useRef()
   const canvasRef = useRef();
@@ -34,7 +34,22 @@ const Snake = () => {
   const endGame = () => {
     setSpeed(null);
     setGameOver(true);
+    submitScore(player, score)
   };
+
+  const submitScore = (player) => {
+    const {name} = player;
+    fetch('http://localhost:6001/snakeHiscores', {
+      method: 'POST',
+      headers: {"Content-Type": 'application/json',
+                "Accept": "application/json"
+              }, 
+      body: JSON.stringify({
+        user: name,
+        userScore: score
+      })
+    })
+  }
 
   const moveSnake = ({ keyCode }) => {
     const [x, y] = DIRECTIONS[keyCode];
@@ -95,7 +110,7 @@ const Snake = () => {
     const context = canvasRef.current.getContext("2d");
     const playerStatsContext = playerStatsRef.current.getContext("2d")
     playerStatsContext.clearRect(0, 0, window.innerWidth, window.innerHeight)
-    if (playerStatsCanvas != undefined) PlayerStats(playerStatsContext, player, score, playerStatsCanvas)
+    if (playerStatsCanvas !== undefined) PlayerStats(playerStatsContext, player, currentUser, score, playerStatsCanvas)
     context.setTransform(SCALE, 0, 0, SCALE, 0, 0);
     context.clearRect(0, 0, window.innerWidth, window.innerHeight);
     context.fillStyle = "black";
@@ -106,7 +121,7 @@ const Snake = () => {
     context.fillRect(apple[0], apple[1], 1, 1);
     context.fillStyle = "red";
     context.fillRect(apple[0], apple[1], .9, .9);
-  }, [snake, apple, gameOver]);
+  }, [snake, apple, gameOver, playerStatsCanvas, score]);
 
   return (
     <div className="columnDiv" role="button" tabIndex="0" onKeyDown={e => { if(e.keyCode >= 37 && e.keyCode <= 40) {
@@ -135,8 +150,8 @@ const Snake = () => {
       
       <div className="gameUtilities">
         <div className="buttonsDiv">
-          {gameOver && <h2 style={{height: "15px"}}>GAME OVER!</h2>}
-          <h3 style={{height: "15px"}}>{gameOver ? `Final Score: ${score}` : ``}</h3>
+          {gameOver && <h2 id="gameOver" style={{height: "15px"}}>GAME OVER!</h2>}
+          <h3 id="finalScore" style={{height: "15px"}}>{gameOver ? `Final Score: ${score}` : ``}</h3>
           <div >
             <button className="gameButton" onClick={startGame}>Start Game</button>
           </div>

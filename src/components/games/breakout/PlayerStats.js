@@ -1,7 +1,7 @@
-export default function PlayerStats(ctx, player, canvas) {
+export default function PlayerStats(ctx, player, currentUser, canvas) {
     ctx.font = "20px Arial"
     ctx.fillStyle = "white"
-    ctx.fillText(`Name: ${player.name}`, 20, 30)
+    ctx.fillText(`Name: ${currentUser}`, 20, 30)
 
     ctx.font = "20px Arial"
     ctx.fillStyle = "white"

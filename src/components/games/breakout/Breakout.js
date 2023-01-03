@@ -1,10 +1,10 @@
 import React from 'react'
 import Board from "./Board"
 
-const BreakoutGame = () => {
+const BreakoutGame = ({ currentUser }) => {
     return (
         <div>
-            <Board />
+            <Board currentUser={currentUser}/>
         </div>
     )
 }
