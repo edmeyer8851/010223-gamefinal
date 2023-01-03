@@ -1,60 +1,135 @@
 
 /* Adding styles component for Breakout / Snake Games */ 
 
+body {
+  background-color: rgb(255, 200, 255) !important
+}
+
 .main-container { 
     text-align: center;
     display : flex;
     flex-direction : row;
- }
- .center {
-    margin: auto;
-    width: 100%;
+}
+.center {
+  margin: auto;
+  width: 100%;
 
 }
- .center-navbar {
-    margin: auto;
-    padding-left: 20px ;
- 
-   
+.center-navbar {
+  margin: auto;
+  padding-left: 20px ;
+}
 
- }
- .main-container{
-     display: flex;
- }
- .left-container{
-     flex-basis: 10%;
- }
- .right-container{
-     flex-basis: 90%;
-     background-color: rgb(255, 255, 255);
-     color: rgb(9, 3, 31);
- }
- /* .right-container-container{
-     display: flex;
-     flex-direction: row;
- } */
- .right-main-item {
-     flex: 1;
- 
- }
- .home-columns {
-    float : left;
-    width: 50%;
-    padding: 10px;
-    height:300px;
- }
- .home-columns-left {
-    float : left;
-    width: 50%;
-    padding: 10px;
-    height:300px;
- }
- .home-columns-right {
-    float : right;
-    width: 50%;
-    padding: 10px;
-    height:300px;
- }
- .home-columns-span {
-    column-span : all;
- }
+.main-container{
+    display: flex;
+}
+.left-container{
+    flex-basis: 10%;
+}
+.right-container{
+    flex-basis: 90%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(9, 3, 31);
+}
+/* .right-container-container{
+    display: flex;
+    flex-direction: row;
+} */
+.right-main-item {
+    flex: 1;
+
+}
+.home-columns {
+  float : left;
+  width: 50%;
+  padding: 10px;
+  height:300px;
+}
+.home-columns-left {
+  float : left;
+  width: 50%;
+  padding: 10px;
+  height:300px;
+}
+.home-columns-right {
+  float : right;
+  width: 50%;
+  padding: 10px;
+  height:300px;
+}
+.home-columns-span {
+  column-span : all;
+}
+
+.gameButton {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.gameUtilities {
+  display: flex;
+  justify-content: center;
+}
+
+.columnDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.buttonsDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.favoritesButton {
+  width: 602px;
+  justify-content: center;
+  align-items: center;
+}
+
+.favoritesButton > button {
+  transform: scale(75%, 75%);
+}
+
+#canvas {
+  background-color: black
+}
+
+#site-title {
+  text-align: center;
+}
+
+#instructions {
+  padding-top: 25px;
+  text-align: center
+}
+
+#snakePreviewImg{
+  width: auto;
+  height: 59%;
+}
+
+div.ui.container.stackable.grid,
+div.two.column.row {
+  height: 450px
+}
+
+#snakePreviewImg:hover {
+  cursor: pointer;
+}
+
+#breakoutPreviewImg:hover {
+  cursor: pointer;
+}

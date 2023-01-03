@@ -136,9 +136,6 @@ const Board = () => {
                 <div >
                     <button className="gameButton" onClick={startGame}>Start Game</button>
                 </div>
-                <div>
-                    <button className="gameButton">Add To Favorites</button>
-                </div>
             </div> 
         </div>
     </div>
