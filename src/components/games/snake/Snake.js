@@ -34,11 +34,11 @@ const Snake = ({ currentUser }) => {
   const endGame = () => {
     setSpeed(null);
     setGameOver(true);
-    submitScore(player, score)
+    submitScore()
   };
 
-  const submitScore = (player) => {
-    const {name} = player;
+  const submitScore = () => {
+    const name = currentUser;
     fetch('http://localhost:6001/snakeHiscores', {
       method: 'POST',
       headers: {"Content-Type": 'application/json',

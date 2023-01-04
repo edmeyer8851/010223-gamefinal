@@ -37,12 +37,6 @@
       "id": 5
     },
     {
-      "game": "snake",
-      "review": "Only kids would like this game",
-      "liked": false,
-      "id": 6
-    },
-    {
       "game": "breakout",
       "review": "Yoooo breakout!!",
       "liked": true,
@@ -75,9 +69,14 @@
   ],
   "snakeHiscores": [
     {
-      "user": "Josh",
+      "user": "Mew2King",
       "userScore": 500,
       "id": 1
+    },
+    {
+      "user": "Mango",
+      "userScore": 490,
+      "id": 14
     },
     {
       "user": "Eddie",
@@ -115,20 +114,65 @@
       "id": 8
     },
     {
-      "user": "Eddie",
+      "user": "Josh",
       "userScore": 300,
       "id": 9
     },
     {
-      "user": "Eddie",
-      "userScore": 80,
+      "user": "Armada",
+      "userScore": 450,
       "id": 10
+    },
+    {
+      "user": "Eddie",
+      "userScore": 250,
+      "id": 11
+    },
+    {
+      "user": "Eddie",
+      "userScore": 70,
+      "id": 12
+    },
+    {
+      "user": "Mark",
+      "userScore": 130,
+      "id": 13
+    },
+    {
+      "user": "",
+      "userScore": 90,
+      "id": 15
+    },
+    {
+      "user": "",
+      "userScore": 200,
+      "id": 16
+    },
+    {
+      "user": "PPMD",
+      "userScore": 420,
+      "id": 16
+    },
+    {
+      "user": "Hungrybox",
+      "userScore": 390,
+      "id": 16
+    },
+    {
+      "user": "",
+      "userScore": 10,
+      "id": 17
+    },
+    {
+      "user": "Mew2King",
+      "userScore": 10,
+      "id": 18
     }
   ],
   "breakoutHiscores": [
     {
       "user": "Zezima",
-      "userScore": 9001,
+      "userScore": 950,
       "id": 1
     },
     {
@@ -147,7 +191,7 @@
       "id": 5
     },
     {
-      "user": "Josh",
+      "user": "Guest",
       "userScore": 70,
       "id": 6
     },
@@ -172,7 +216,7 @@
       "id": 10
     },
     {
-      "user": "Josh",
+      "user": "Eddie",
       "userScore": 150,
       "id": 11
     },
@@ -195,6 +239,16 @@
       "user": "Eddie",
       "userScore": 730,
       "id": 15
+    },
+    {
+      "user": "Mark",
+      "userScore": 160,
+      "id": 16
+    },
+    {
+      "user": "",
+      "userScore": 230,
+      "id": 17
     }
   ]
 }
