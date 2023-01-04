@@ -62,7 +62,7 @@ function Highscores() {
         <Divider hidden />
         <Grid.Row centered columns="two">
             <Grid.Column id="hiscoreColumn">
-              <Header size="large" as="h1" style= {{textAlign: 'center'}}>Snake Hiscores</Header>
+              <Header size="large" as="h1" style= {{textAlign: 'center'}}>Snake</Header>
               <br/>
               <div className="center aligned ui grid">
                 <div className='ag-theme-alpine-dark' style={{height: 474, width: 305}}>
@@ -74,7 +74,7 @@ function Highscores() {
               </div>
             </Grid.Column>
             <Grid.Column id="hiscoreColumn">
-              <Header size="large" as="h1" style= {{textAlign: 'center'}}>Breakout Hiscores</Header>
+              <Header size="large" as="h1" style= {{textAlign: 'center'}}>Breakout</Header>
               <br/>
               <div className="center aligned ui grid">
                 <div className='ag-theme-alpine-dark' style={{height: 474, width: 305}}>
