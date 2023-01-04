@@ -25,7 +25,6 @@ function SnakeGame ({ currentUser, reviews, addNewReview }) {
                 </Container>
             </Grid>
         </div> 
-
     )
 }
 

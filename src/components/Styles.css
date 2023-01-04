@@ -139,3 +139,14 @@ div.two.column.row {
 #finalScore {
   margin-top: 15px
 }
+
+.ag-row .ag-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ag-header-cell-label {
+  justify-content: center;
+  align-items: center;
+}
