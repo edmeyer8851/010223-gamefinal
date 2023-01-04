@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from "react";
 import './Styles.css';
-import './Styles.css';
 import { Divider, Grid, Header } from "semantic-ui-react";
 import 'semantic-ui-css/semantic.min.css'
 import { AgGridReact } from 'ag-grid-react'
 import 'ag-grid-community/dist/styles/ag-grid.css'
 import 'ag-grid-community/dist/styles/ag-theme-alpine-dark.css'
 
-// when building hiscores, list as anonymous if the hiscore was achieved by a player not logged in
-
-function Highscores() {
+function Hiscores() {
   
   const [snakeHiscores, setSnakeHiscores] = useState([])
   const [breakoutHiscores, setBreakoutHiscores] = useState([])
@@ -40,7 +37,7 @@ function Highscores() {
   const SnakeRowData = snakeScoresToDisplay.map((score, index)  => {
     return {
       Rank: index + 1,
-      User: score.user === "" ? "Guest" : score.user,
+      User: score.user==="" ? "Guest" : score.user,
       Score: score.userScore
     }
   })
@@ -48,7 +45,7 @@ function Highscores() {
   const BreakoutRowData = breakoutScoresToDisplay.map((score, index) => {
     return {
       Rank: index + 1,
-      User: score.user === "" ? "Guest" : score.user,
+      User: score.user==="" ? "Guest" : score.user,
       Score: score.userScore
     }
   })
@@ -91,4 +88,4 @@ function Highscores() {
   )
 }
 
-export default Highscores;
+export default Hiscores;

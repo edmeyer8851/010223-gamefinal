@@ -121,7 +121,7 @@ const Snake = ({ currentUser }) => {
     context.fillRect(apple[0], apple[1], 1, 1);
     context.fillStyle = "red";
     context.fillRect(apple[0], apple[1], .9, .9);
-  }, [snake, apple, gameOver, playerStatsCanvas, score]);
+  }, [snake, apple, gameOver, playerStatsCanvas, score, currentUser]);
 
   return (
     <div className="columnDiv" role="button" tabIndex="0" onKeyDown={e => { if(e.keyCode >= 37 && e.keyCode <= 40) {
