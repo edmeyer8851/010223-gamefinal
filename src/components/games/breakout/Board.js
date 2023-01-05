@@ -25,6 +25,7 @@ const Board = ({ currentUser }) => {
         ballObj.y = 200
         ballObj.dy = 5
         brickObj.y = 50
+        ballObj.speed = 10
         player.level = 1
         bricks = []
         gameStartedBool = !gameStartedBool
@@ -74,6 +75,7 @@ const Board = ({ currentUser }) => {
                 ballObj.x = 385
                 ballObj.y = 200
                 ballObj.dy = 0
+                ballObj.speed = 10
                 setGameOver(true)
                 gameStartedBool = !gameStartedBool
                 setGameStarted(!gameStarted)
