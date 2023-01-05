@@ -12,11 +12,11 @@ function Hiscores() {
   const [breakoutHiscores, setBreakoutHiscores] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:6001/snakeHiscores')
+    fetch(`${process.env.REACT_APP_API_URL}/snakeHiscores`)
     .then(res => res.json())
     .then(hiscores => setSnakeHiscores(hiscores))
 
-    fetch('http://localhost:6001/breakoutHiscores')
+    fetch(`${process.env.REACT_APP_API_URL}/breakoutHiscores`)
     .then(res => res.json())
     .then(hiscores => setBreakoutHiscores(hiscores))
   }, [])

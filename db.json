@@ -1,7 +1,7 @@
 {
   "currentUser": [
     {
-      "name": "Eddie",
+      "name": "",
       "id": 1
     }
   ],
@@ -172,6 +172,31 @@
       "user": "Eddie",
       "userScore": 130,
       "id": 19
+    },
+    {
+      "user": "",
+      "userScore": 90,
+      "id": 20
+    },
+    {
+      "user": "",
+      "userScore": 140,
+      "id": 21
+    },
+    {
+      "user": "",
+      "userScore": 20,
+      "id": 22
+    },
+    {
+      "user": "",
+      "userScore": 10,
+      "id": 23
+    },
+    {
+      "user": "",
+      "userScore": 260,
+      "id": 24
     }
   ],
   "breakoutHiscores": [
@@ -254,6 +279,11 @@
       "user": "",
       "userScore": 230,
       "id": 17
+    },
+    {
+      "user": "",
+      "userScore": 460,
+      "id": 18
     }
   ]
 }

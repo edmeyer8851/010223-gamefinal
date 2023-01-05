@@ -19,7 +19,7 @@ function Review ({ addNewReview }) {
             liked: gameLiked
         }
 
-        fetch ("http://localhost:6001/reviews", {
+        fetch (`${process.env.REACT_APP_API_URL}/reviews`, {
             method : "POST",
             headers : {
                 "Content-Type" : "application/JSON",
@@ -89,11 +89,3 @@ function Review ({ addNewReview }) {
 }
 
 export default Review
-
-// {/*<h1> </h1>
-// <form> 
-//     <input type = "text" name = "gameName" placeholder = "Game Name" value = {gameName} onChange = {(e) => setGameName(e.target.value)} />
-//     <input type = "text" name = "gameReview" placeholder = "Game Review" value = {gameReview} onChange = {(e) => setGameReview(e.target.value)} />
-//     <input type="number" name="gameLike" step="0.01" placeholder="gameLike" value={gameLike} onChange = {(e) => setGameLike(e.target.value)}/>
-//     <button type="submit">Add Plant</button>
-// </form>*/}

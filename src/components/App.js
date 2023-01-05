@@ -16,11 +16,11 @@ function App() {
   const [userForm, setUserForm] = useState("")
 
   useEffect (() => {
-    fetch ("http://localhost:6001/reviews")
+    fetch (`${process.env.REACT_APP_API_URL}/reviews`)
       .then (resp => resp.json())
       .then (setReviews)
 
-    fetch ("http://localhost:6001/currentUser")
+    fetch (`${process.env.REACT_APP_API_URL}/currentUser`)
       .then (resp => resp.json())
       .then (user => setCurrentUser(user[0].name))
   }, [])
@@ -35,7 +35,7 @@ function App() {
       "name" : userForm,
     }
     
-    fetch ("http://localhost:6001/currentUser/1",{
+    fetch (`${process.env.REACT_APP_API_URL}/currentUser/1`,{
         method:"PATCH",
         headers: {
           "Content-Type": "application/JSON",
@@ -49,7 +49,7 @@ function App() {
   }
 
   const logOut = () => {
-    fetch ("http://localhost:6001/currentUser/1", {
+    fetch (`${process.env.REACT_APP_API_URL}/currentUser/1`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/JSON",
