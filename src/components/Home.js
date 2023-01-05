@@ -14,11 +14,11 @@ function Home({reviews}) {
           <Grid.Row columns="two">
             <Grid.Column >
               <Header as="h3" textAlign="center">Snake</Header>
-              <img id="snakePreviewImg" src={process.env.PUBLIC_URL + 'images/snakeImage.png'} alt="" onClick={() => window.location.href = `${process.env.REACT_APP_API_URL}/snakegame`}/>
+              <img id="snakePreviewImg" src={process.env.PUBLIC_URL + 'images/snakeImage.png'} alt="" onClick={() => window.location.href = `/snakegame`}/>
             </Grid.Column>
             <Grid.Column>
               <Header as="h3" textAlign="center">Breakout</Header>
-              <img id="breakoutPreviewImg" src={process.env.PUBLIC_URL + 'images/breakoutImage.png'} alt="" onClick={() => window.location.href = `${process.env.REACT_APP_API_URL}/breakout`}/>
+              <img id="breakoutPreviewImg" src={process.env.PUBLIC_URL + 'images/breakoutImage.png'} alt="" onClick={() => window.location.href = `/breakout`}/>
             </Grid.Column>
           </Grid.Row>
       </Grid>
