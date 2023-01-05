@@ -26,9 +26,9 @@ function NavBar({ currentUser, logOut }) {
                     <Menu.Item as="a" href = "/hiscores" style = {{color:"yellow"}}>
                         Hiscores 
                     </Menu.Item>
-                    <Menu.Item as="a" href = "/login" style = {{color:"yellow"}}>
+                    {currentUser==="" && <Menu.Item as="a" href = "/login" style = {{color:"yellow"}}>
                         Login 
-                    </Menu.Item>
+                    </Menu.Item>}
                     <Menu.Menu position="right">
                         <Menu.Item> 
                             {currentUser!=="" && <div>Hello, {currentUser}!</div>}

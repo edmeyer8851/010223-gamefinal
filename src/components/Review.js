@@ -80,6 +80,9 @@ function Review ({ addNewReview }) {
                 </Button>
             </Form>
             </Container>
+            <br/>
+            <br/>
+            <br/>
         </div>
 
 
