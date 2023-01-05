@@ -44,7 +44,7 @@ const Board = ({ currentUser }) => {
             const ctx = canvas.getContext('2d');
 
             paddleProps.y = canvas.height - 40
-            console.log(player.speed)
+            console.log(ballObj.speed)
 
             // assign bricks            
             let newBrickSet = Brick(player.level, bricks, canvas, brickObj)
