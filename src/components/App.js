@@ -44,7 +44,7 @@ function App() {
        })
        .then(res => {
       setUserForm("")
-      window.location = 'http://localhost:3000'
+      window.location = '/'
     })
   }
 
