@@ -39,7 +39,7 @@ const Snake = ({ currentUser }) => {
 
   const submitScore = () => {
     const name = currentUser;
-    fetch('http://localhost:6001/snakeHiscores', {
+    fetch(`${process.env.REACT_APP_API_URL}/snakeHiscores`, {
       method: 'POST',
       headers: {"Content-Type": 'application/json',
                 "Accept": "application/json"
